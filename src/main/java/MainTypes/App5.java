@@ -32,19 +32,21 @@ public class App5 {
             }
               System.out.println(" ");   
         }
-       for(int i=1;i<n-1;i=i+2){
+       for(int i=1;i<n;i++){
            for(int j=0; j<m;j++){
-               if(x[i][j]%2==0){
+               if(i%2==0){
+                  if(x[i][j]%2==0){ 
                   System.out.println("Четные эл:"+x[i][j]); 
-        
+                  }
                }
            }
        }
        for(int i=0;i<n;i++){
            for(int j=0; j<m;j=j+2){
-                if(x[i][j]%2!=0){
+                if(i%2-1==0){
+                     if(x[i][j]%2-1==0){ 
                    System.out.println("Нечетные эл:"+x[i][j]); 
-               
+                     }
                }
            }
        }
